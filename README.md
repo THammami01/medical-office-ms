@@ -38,3 +38,115 @@ INSERT INTO `SGP`.`Patient` VALUES(
 
 3. Verify the connection strings: `DB_HOST`, `DB_PORT`, `DB_USER`, `DB_PASSWORD`, and `DB_DATABASE`
 4. Run `SGP.exe`
+
+## Screenshots
+
+![Screenshot 01](/Screenshots/01.png)
+<p align="center">
+  <b><i>-- Login --</i></b>
+</p>
+
+---
+
+![Screenshot 02](/Screenshots/02.png)
+<p align="center">
+  <b><i>-- Logging In --</i></b>
+</p>
+
+---
+
+![Screenshot 03](/Screenshots/03.png)
+<p align="center">
+  <b><i>-- Home --</i></b>
+</p>
+
+---
+
+![Screenshot 04](/Screenshots/04.png)
+<p align="center">
+  <b><i>-- Menu --</i></b>
+</p>
+
+---
+
+![Screenshot 05](/Screenshots/05.png)
+<p align="center">
+  <b><i>-- Exporting data --</i></b>
+</p>
+
+---
+
+![Screenshot 06](/Screenshots/06.png)
+<p align="center">
+  <b><i>-- Exported XLS file --</i></b>
+</p>
+
+---
+
+![Screenshot 07](/Screenshots/07.png)
+<p align="center">
+  <b><i>-- Import data modal --</i></b>
+</p>
+
+---
+
+![Screenshot 08](/Screenshots/08.png)
+<p align="center">
+  <b><i>-- Importing data in progress --</i></b>
+</p>
+
+---
+
+![Screenshot 09](/Screenshots/09.png)
+<p align="center">
+  <b><i>-- Change password modal --</i></b>
+</p>
+
+---
+
+![Screenshot 10](/Screenshots/10.png)
+<p align="center">
+  <b><i>-- Switching to second user --</i></b>
+</p>
+
+---
+
+![Screenshot 11](/Screenshots/11.png)
+<p align="center">
+  <b><i>-- Search results --</i></b>
+</p>
+
+---
+
+![Screenshot 12](/Screenshots/12.png)
+<p align="center">
+  <b><i>-- No record found --</i></b>
+</p>
+
+---
+
+![Screenshot 13](/Screenshots/13.png)
+<p align="center">
+  <b><i>-- Filtering settings modal --</i></b>
+</p>
+
+---
+
+![Screenshot 14](/Screenshots/14.png)
+<p align="center">
+  <b><i>-- Add new patient --</i></b>
+</p>
+
+---
+
+![Screenshot 15](/Screenshots/15.png)
+<p align="center">
+  <b><i>-- Update existing patient's data --</i></b>
+</p>
+
+---
+
+![Screenshot 16](/Screenshots/16.png)
+<p align="center">
+  <b><i>-- Delete patient's record --</i></b>
+</p>
