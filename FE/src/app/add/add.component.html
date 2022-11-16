@@ -1,0 +1,116 @@
+<p-toast position="bottom-center" ngClass="custom-toast"></p-toast>
+
+<div ngClass="container">
+  <h1>
+    <i
+      class="pi pi-arrow-left"
+      tabindex="0"
+      ngClass="go-back-icon"
+      (click)="handleGoBack()"
+    ></i>
+    Ajout des details d'un nouveau patient
+  </h1>
+
+  <div ngClass="divider">
+    <p-divider></p-divider>
+  </div>
+
+  <div ngClass="inputs-groups-container">
+    <div ngClass="inputs-group">
+      <div class="p-field form-el">
+        <label>Id:</label>
+        <input pInputText [(ngModel)]="newPatient.patientId" />
+      </div>
+
+      <div class="p-field form-el">
+        <label>Nom de famille:</label>
+        <input pInputText [(ngModel)]="newPatient.lastname" />
+      </div>
+
+      <div class="p-field form-el">
+        <label>Prénom:</label>
+        <input pInputText [(ngModel)]="newPatient.firstname" />
+      </div>
+
+      <div class="p-field form-el">
+        <label>Date de naissance:</label>
+        <div>
+          <p-inputMask
+            slotChar="jj/mm/aaaa"
+            mask="99/99/9999"
+            [(ngModel)]="newPatient.birthday"
+          ></p-inputMask>
+        </div>
+      </div>
+    </div>
+
+    <p-divider layout="vertical" ngClass="inputs-groups-divider"> </p-divider>
+
+    <div ngClass="inputs-group">
+      <div class="p-field form-el">
+        <label>CIN:</label>
+        <p-inputMask
+          mask="99999999"
+          [(ngModel)]="newPatient.nicNb"
+        ></p-inputMask>
+      </div>
+
+      <div class="p-field form-el">
+        <label>Téléphone:</label>
+        <p-inputMask
+          slotChar="(+216) __ ___ ___"
+          mask="(+216) 99 999 999"
+          [(ngModel)]="newPatient.phoneNb"
+          autocomplete="disabled"
+        ></p-inputMask>
+      </div>
+
+      <div class="p-field form-el">
+        <label>Date d'ajout:</label>
+        <div ngClass="auto-filled-el">
+          <p-inputMask
+            slotChar="jj/mm/aaaa"
+            mask="99/99/9999"
+            [(ngModel)]="newPatient.addday"
+          ></p-inputMask>
+          <i
+            *ngIf="!newPatient.addday"
+            class="pi pi-replay"
+            style="font-size: 1.5rem; color: rgba(96, 94, 92, 0.6)"
+            pTooltip="Remplir avec la date d'aujourd'hui"
+            tooltipPosition="right"
+            [showDelay]="5000"
+            [hideDelay]="500"
+            (click)="handleAutofill()"
+          ></i>
+        </div>
+      </div>
+
+      <div class="p-field form-el">
+        <label>Nom du père:</label>
+        <input pInputText [(ngModel)]="newPatient.parentName" />
+      </div>
+
+      <div class="p-field form-el">
+        <div ngClass="btns">
+          <button
+            pButton
+            type="button"
+            label="Enregistrer"
+            (click)="handleSave()"
+            [disabled]="isLoading$ | async"
+          ></button>
+          <button
+            pButton
+            type="button"
+            label="Réinitialiser"
+            ngClass="p-button-text p-button-plain"
+            (click)="initializeNewPatient()"
+          ></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p-scrollTop></p-scrollTop>
+</div>
