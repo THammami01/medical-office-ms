@@ -4,7 +4,7 @@
 
 In order to use the app:
 
-1. Download and install the Windows executables `SGP Setup.exe`
+1. Download and install the Windows executable `SGP Setup.exe`
 2. Install MySQL or MariaDB and create a database with the following requests:
 
 ```sql
